@@ -2,3 +2,4 @@ django
 django-filter
 djangorestframework
 factory_boy
+gunicorn
