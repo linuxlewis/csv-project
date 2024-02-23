@@ -141,6 +141,7 @@ STORAGES = {
     "staticfiles": {"BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage"},
 }
 if not DEBUG:
+    STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
     STORAGES["staticfiles"] = {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage"
     }
